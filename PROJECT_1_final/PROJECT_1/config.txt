@@ -1,0 +1,13 @@
+num_teams=2
+players_per_team=4
+rope_threshold=100.0
+game_duration=120
+energy_report_interval=1
+fall_recovery_min=2
+fall_recovery_max=5
+fall_probability=0.1
+round_win_threshold=25.0
+total_rounds=5
+consecutive_rounds_to_win=3
+minimum_energy=80
+range=20

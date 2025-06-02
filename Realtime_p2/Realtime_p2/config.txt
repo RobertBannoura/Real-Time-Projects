@@ -1,0 +1,78 @@
+###########################################################
+# --- Worker counts ---------------------------------------
+n_supply        = 2
+n_chefs_paste   = 6
+n_chefs_cake    = 1
+n_chefs_sand    = 1
+n_chefs_sweet   = 1
+n_chefs_pat_s   = 1
+n_chefs_pat_v   = 1
+
+n_bakers_bread  = 6
+n_bakers_cs     = 5
+n_bakers_pat    = 3
+n_sellers       = 2
+
+# --- Termination thresholds ------------------------------
+max_frustrated  = 30
+max_complaints  = 15
+max_missing     = 25
+profit_target   = 20000        # cents  (== 200 ILS)
+max_minutes     = 5            # run-time limit
+max_customer_wait_ms = 6000    # Max wait per customer before frustration (in milliseconds)
+
+
+# --- Prices (cents) – optional
+price_bread     = 150
+price_cake      = 300
+price_sandwich  = 250
+price_sweet     = 200
+price_patis_s   = 350
+price_patis_v   = 350
+###########################################################
+tick_ms          = 500
+########################################
+# --- Initial stock levels -------------------------------
+start_wheat      = 100
+start_yeast      = 80
+start_butter     = 60
+start_milk       = 50
+start_sugar      = 70
+start_salt       = 40
+start_cheese     = 30
+start_salami     = 30
+start_sweet_items= 50
+
+########################################
+# --- Supply purchase ranges (min-max for random purchases) ---------------
+purchase_wheat_min      = 10
+purchase_wheat_max      = 30
+
+purchase_yeast_min      = 5
+purchase_yeast_max      = 15
+
+purchase_butter_min     = 5
+purchase_butter_max     = 15
+
+purchase_milk_min       = 5
+purchase_milk_max       = 15
+
+purchase_sugar_min      = 5
+purchase_sugar_max      = 15
+
+purchase_salt_min       = 3
+purchase_salt_max       = 10
+
+purchase_sweet_items_min = 5
+purchase_sweet_items_max = 20
+
+purchase_cheese_min     = 5
+purchase_cheese_max     = 15
+
+purchase_salami_min     = 5
+purchase_salami_max     = 15
+
+########################################
+# ── Quality failure rate (0–100%) ─────────────────────────
+bake_fail_pct = 15    # percentage chance any item is “bad”
+
