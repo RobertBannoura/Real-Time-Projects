@@ -1,0 +1,37 @@
+# ======== Gang Structure & Membership ========
+
+num_gangs=1                        # Total number of gangs in the simulation
+min_members_per_gang=5
+max_members_per_gang=5          # Maximum number of members in a gang
+num_ranks=3                       # Number of hierarchical ranks in each gang
+promotion_knowledge_threshold = 0.80
+demotion_knowledge_threshold  = 0.20
+promotion_per_rank            = 0.5
+demotion_per_rank             = 0.5
+
+# ======== Agent Behavior & Infiltration ========
+
+agent_infiltration_rate=0.3       # Probability that a gang member is secretly a police agent
+false_info_rate=0.2               # Probability that information passed to lower ranks is false
+agent_start_rank = 5
+# ======== Plan Execution & Outcomes ========
+
+plan_success_rate=0.75            # Base chance a gang plan will succeed if fully prepared
+suspicion_threshold=0.6           # Suspicion level beyond which an agent reports to the police
+
+plan_thwart_limit=5               # Max number of plans the police can thwart before simulation ends
+successful_plan_limit=20           # Max number of plans gangs can successfully execute before winning
+executed_agents_limit=3           # Max number of agents executed before simulation terminates
+random_thwart_rate = 0.50 
+# ======== Consequences ========
+
+prison_time=10                    # Prison duration (in seconds) if a gang is caught
+member_death_rate=0.1             # Probability a gang member dies during a mission
+
+# ======== Agent Intelligence Parameters ========
+
+false_info_penalty=-0.1           # Amount of knowledge lost by agent when receiving false info
+true_info_reward=0.2              # Amount of knowledge gained from true info
+
+false_info_suspicion=0.1          # Suspicion increase when agent receives false info
+true_info_trust_gain=0.05         # Suspicion decrease when agent receives correct info
